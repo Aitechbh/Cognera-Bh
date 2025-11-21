@@ -3,145 +3,198 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Cognera Consultancy W.L.L — Virtual Tech Classes (Bahrain)</title>
-  <meta name="description" content="Interactive virtual STEM & coding courses for kids (aged 6–18) in Bahrain — Games, Apps, Robotics, Python, Web Development, AI/ML & Cognitive Skills.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { margin:0; font-family:Inter,sans-serif; background:#f8f9fa; color:#111827; line-height:1.5;}
-    .container{max-width:1100px;margin:0 auto;padding:28px;}
-    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0;background:#fff;border-bottom:1px solid #e2e8f0;}
-    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;}
-    .brand img{width:100px;height:auto;border-radius:8px;}
-    .brand-text{display:flex;flex-direction:column;}
-    .brand-text .company-name{font-weight:700;color:#1d4ed8;font-size:20px;}
-    .brand-text .tagline{font-weight:600;color:#1d4ed8;font-size:16px;}
-    nav{display:flex;gap:14px;align-items:center}
-    nav a{color:#1d4ed8;text-decoration:none;font-weight:600;font-size:14px}
-    .hero{display:grid;grid-template-columns:1fr;gap:22px;align-items:center;padding:40px 0;background:#fff;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.05);}
-    .hero-inner h1{color:#1d4ed8;font-size:clamp(22px,4vw,28px);margin:0;line-height:1.05;}
-    .hero-inner p{color:#6b7280;}
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px;}
-    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:10px;border:0;font-weight:700;cursor:pointer;text-decoration:none;}
-    .btn-primary{background:#1d4ed8;color:#fff;box-shadow:0 6px 18px rgba(29,78,216,0.14);}
-    .btn-ghost{background:transparent;color:#1d4ed8;border:1px solid rgba(29,78,216,0.4);}
-    .hero-images{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap;}
-    .hero-images img{width:calc(50% - 6px);border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,0.06);}
-    section{padding:34px 0;}
-    .courses{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}
-    .card{background:#fff;padding:16px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,0.04);}
-    .course-title{font-weight:700;margin:0 0 6px 0;color:#1d4ed8;}
-    .muted{color:#6b7280;font-size:14px;}
-    footer{padding:28px 0;color:#6b7280;font-size:14px;text-align:center;}
-    .contact-card{padding:14px;border-radius:10px;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,0.05);}
-    .list{list-style:none;padding:0;margin:0;display:grid;gap:8px;}
-    a.whatsapp{color:#fff;background:#25D366;padding:10px 12px;border-radius:8px;text-decoration:none;font-weight:700;display:inline-block;}
-  </style>
+  <title>Cognera Consultancy — Virtual Coding & Robotics</title>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (icons) -->
+  <script src="https://kit.fontawesome.com/a2d9b8f6d1.js" crossorigin="anonymous"></script>
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a class="brand" href="#home" aria-label="Cognera Consultancy">
-        <img src="images/Logo2.jpeg" alt="Cognera Logo">
-        <div class="brand-text">
-          <div class="company-name">Cognera Consultancy W.L.L</div>
-          <div class="tagline">New Era of Advanced Skills</div>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <!-- Local logo path (already available in the environment) -->
+        <img src="/mnt/data/A_logo_for_Cognera_Consultancy_is_displayed_on_a_w.png" alt="Cognera logo" class="logo">
+        <div>
+          <h1 class="brand-title">Cognera Consultancy</h1>
+          <p class="brand-sub">Virtual coding, robotics & AI classes — Bahrain</p>
         </div>
-      </a>
-      <nav>
+      </div>
+
+      <nav class="nav">
         <a href="#courses">Courses</a>
         <a href="#about">About</a>
+        <a href="#why">Why Us</a>
         <a href="#contact">Contact</a>
+        <a href="https://wa.me/XXXXXXXXXXX" class="btn-whatsapp" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <!-- HERO -->
-    <main id="home" class="hero">
-      <div class="hero-inner">
-        <h1>Virtual Classes for Kids Aged 6–18 in Bahrain</h1>
-        <p>
-          Live, instructor-led programs in Game Development, App Development, Python (block & textual), Web Development,
-          Robotics, AI/ML & Cognitive Skills.
-        </p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#contact">Enroll Now</a>
-          <a class="btn btn-ghost" href="#courses">See Courses</a>
-          <a class="whatsapp" href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank">WhatsApp Us</a>
-        </div>
+  <!-- Hero -->
+  <section class="hero">
+    <!-- background / reference image (local) -->
+    <img class="hero-bg" src="/mnt/data/screencapture-f2solympiadsclasses-2025-11-20-14_13_02.png" alt="hero background">
+    <div class="wrap hero-inner">
+      <div class="hero-left">
+        <h2>Learn to build games, apps & robots — from home</h2>
+        <p class="lead">Hands-on virtual classes for kids & teens. No experience needed — just curiosity.</p>
 
-        <!-- Sample images -->
-        <div class="hero-images">
-          <div class="banner">
-    <img src="images/coding.jpg" alt="Kids learning coding">
-</div>
-
-<img src="images/Robot1.jpg" style="width: 100%; border-radius: 10px;" alt="Kids doing robotics">
-        </div>
-      </div>
-    </main>
-
-    <!-- ABOUT -->
-    <section id="about">
-      <h2>About Us</h2>
-      <p class="muted">
-        Cognera Consultancy W.L.L provides world-class virtual technology education to students across Bahrain. Our
-        mission is to make children future-ready by building strong technical foundations and boosting cognitive skills
-        through project-based, instructor-led programs.
-      </p>
-    </section>
-
-    <!-- COURSES -->
-    <section id="courses">
-      <h2>Courses We Offer</h2>
-      <div class="courses">
-        <div class="card">
-          <div class="course-title">Game Development</div>
-          <div class="muted">Create games, learn logic, animation & interactive storytelling.</div>
-        </div>
-        <div class="card">
-          <div class="course-title">App Development</div>
-          <div class="muted">Design and build mobile apps with UI/UX fundamentals.</div>
-        </div>
-        <div class="card">
-          <div class="course-title">Python Block Coding</div>
-          <div class="muted">Visual coding to learn programming basics.</div>
-        </div>
-        <div class="card">
-          <div class="course-title">Python Textual Coding</div>
-          <div class="muted">Hands-on Python programming for ages 10+.</div>
-        </div>
-        <div class="card">
-          <div class="course-title">Web Development</div>
-          <div class="muted">HTML, CSS & JavaScript — build real websites.</div>
-        </div>
-        <div class="card">
-          <div class="course-title">AI / Machine Learning</div>
-          <div class="muted">Intro to ML, chatbots, image detection & models.</div>
-        </div>
-        <div class="card">
-          <div class="course-title">Robotics</div>
-          <div class="muted">Hands-on robotics projects and coding kits.</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact & Enrollment</h2>
-      <div class="contact-card">
-        <ul class="list">
-          <li><strong>Location:</strong> Bahrain</li>
-          <li><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></li>
-          <li><strong>WhatsApp:</strong> <a href="https://wa.me/YOUR_WHATSAPP_NUMBER" target="_blank">Message us</a></li>
+        <ul class="bullets">
+          <li>Project-based learning</li>
+          <li>Small batches • Live instructors</li>
+          <li>From block coding → Python → Robotics</li>
         </ul>
-        <p class="muted" style="margin-top:12px;">
-          Classes are virtual, small groups, hands-on projects, and certificates on completion.
-        </p>
-      </div>
-    </section>
 
-    <footer>
-      © 2025 Cognera Consultancy W.L.L — Bahrain
-    </footer>
-  </div>
+        <div class="cta-row">
+          <a class="btn primary" href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noreferrer"><i class="fab fa-whatsapp"></i> Book Free Demo</a>
+          <a class="btn ghost" href="#courses">View Courses</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- promo / demo images (placeholder local image) -->
+        <img src="/mnt/data/Logo1.jpeg" alt="promo" class="promo-img">
+        <img src="/mnt/data/Logo1.jpeg" alt="promo2" class="promo-img small">
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses -->
+  <section id="courses" class="section">
+    <div class="wrap">
+      <h3 class="section-title">Courses we offer</h3>
+      <p class="section-lead">In partnership with TinkerCoders & STEMRobo — from beginner to advanced tracks.</p>
+
+      <div class="grid cards">
+        <article class="card">
+          <i class="fas fa-gamepad icon-lg"></i>
+          <h4>Game Development</h4>
+          <p>Create playable games using visual blocks and step into text-based coding.</p>
+        </article>
+
+        <article class="card">
+          <i class="fas fa-mobile-alt icon-lg"></i>
+          <h4>App Development</h4>
+          <p>Build simple apps and learn UI logic, event handling and basic deployment.</p>
+        </article>
+
+        <article class="card">
+          <i class="fab fa-python icon-lg"></i>
+          <h4>Python (Blocks → Text)</h4>
+          <p>Start with block-style Python, then progress to text-based scripting for real projects.</p>
+        </article>
+
+        <article class="card">
+          <i class="fas fa-robot icon-lg"></i>
+          <h4>Robotics</h4>
+          <p>Hands-on robot kits: sensors, motors and simple control algorithms for kids.</p>
+        </article>
+
+        <article class="card">
+          <i class="fas fa-laptop-code icon-lg"></i>
+          <h4>Web Development</h4>
+          <p>HTML, CSS and JavaScript intro — build interactive pages and mini-projects.</p>
+        </article>
+
+        <article class="card">
+          <i class="fas fa-brain icon-lg"></i>
+          <h4>AI & ML Fundamentals</h4>
+          <p>Kid-friendly AI concepts and mini ML experiments (visual & simple datasets).</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Why choose us -->
+  <section id="about" class="section alt">
+    <div class="wrap about-grid">
+      <div class="about-text">
+        <h3>About Cognera Consultancy</h3>
+        <p>Cognera delivers virtual STEM education designed to spark curiosity and build practical skills. We combine hands-on robotics, creative coding, and beginner-friendly AI lessons — taught by experienced instructors.</p>
+
+        <ul class="checklist">
+          <li>Small batches for personalized learning</li>
+          <li>Project milestones & certificates</li>
+          <li>Demo classes & parent progress updates</li>
+        </ul>
+
+        <a class="btn primary" href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noreferrer">Book a Demo</a>
+      </div>
+
+      <div class="about-media">
+        <!-- use your coding image later; placeholder points to a local file we have available -->
+        <img src="/mnt/data/Logo1.jpeg" alt="coding sample">
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section id="why" class="section features">
+    <div class="wrap">
+      <h3 class="section-title">Why choose Cognera?</h3>
+      <div class="grid features-grid">
+        <div class="feature">
+          <i class="fas fa-chalkboard-teacher feature-icon"></i>
+          <h4>Expert Tutors</h4>
+          <p>Educators with real classroom and industry experience.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-clipboard-check feature-icon"></i>
+          <h4>Project-Based</h4>
+          <p>Learn by building — each module ships with a project.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-user-graduate feature-icon"></i>
+          <h4>Progress Tracking</h4>
+          <p>Clear milestones and feedback to measure growth.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-globe feature-icon"></i>
+          <h4>Learn from Home</h4>
+          <p>Live online classes with recordings and support resources.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer id="contact" class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-about">
+        <img src="/mnt/data/A_logo_for_Cognera_Consultancy_is_displayed_on_a_w.png" class="logo-sm" alt="Cognera logo">
+        <p>Cognera Consultancy — Virtual coding & robotics from Bahrain.</p>
+        <p><strong>WhatsApp: </strong><a href="https://wa.me/XXXXXXXXXXX">+973 XXXXXXXXX</a></p>
+        <p><strong>Email: </strong>hello@cognera.com</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#why">Why Cognera</a></li>
+        </ul>
+        <div class="social">
+          <a href="#" aria-label="facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="wrap">© <span id="year"></span> Cognera Consultancy — All rights reserved</div>
+    </div>
+  </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
